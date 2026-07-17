@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>deploy-hub demo</title>
+<style>
+  body { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+         max-width: 40rem; margin: 4rem auto; padding: 0 1rem; line-height: 1.6; }
+  h1 { font-size: 1.2rem; }
+  dt { float: left; width: 6rem; opacity: .6; }
+  dd { margin: 0 0 .3rem 6rem; word-break: break-all; }
+  p  { opacity: .8; }
+</style>
+</head>
+<body>
+<h1>deploy-hub demo</h1>
+<dl>
+  <dt>app</dt>   <dd>deploy-hub-demo</dd>
+  <dt>sha</dt>   <dd>__SHA__</dd>
+  <dt>built</dt> <dd>__BUILT__ (UTC, CI)</dd>
+</dl>
+<p>This page is built in CI and deployed to the VPS by deploy-hub.
+The sha above is baked in at docker build time: if it equals the repo HEAD,
+you are looking at the deployed version of that exact commit.</p>
+</body>
+</html>
